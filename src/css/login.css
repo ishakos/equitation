@@ -1,0 +1,118 @@
+/* Variables */
+:root {
+  --Font1: "Playfair Display", serif;
+  --Font2: "Poppins", sans-serif;
+  --Main-color: #ae4a84;
+  --Grey: #888888;
+}
+/* Variables */
+/* Global Variables */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+body {
+  font-family: var(--Font2);
+}
+input:focus {
+  outline: none;
+}
+.errorMessage {
+  display: flex;
+  padding-bottom: 10px;
+  color: red;
+}
+.logContainer {
+  background-image: url(../../public/images/background-login.gif);
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.logContainer::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.5;
+}
+.logContainer .box {
+  width: 500px;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logContainer .buttons {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.logContainer .buttons a {
+  color: white;
+}
+.logContainer .buttons button:first-child {
+  margin-right: 10px;
+}
+.logContainer .buttons button:last-child {
+  margin-left: 10px;
+}
+@media (max-width: 767px) {
+  .logContainer .box {
+    width: 400px;
+    padding: 80px 30px;
+  }
+}
+.logContainer .box .image {
+  margin-bottom: 50px;
+}
+.logContainer .box .image img {
+  width: 130px;
+  height: 130px;
+}
+.logContainer .box input {
+  margin-bottom: 20px;
+  width: 100%;
+  color: #666666;
+}
+.logContainer .sign {
+  background-color: var(--Main-color);
+  color: white;
+  width: 100%;
+  padding: 25px 0px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  transition: 0.2s;
+  border: none;
+}
+.logContainer .sign:hover {
+  background-color: #79335c;
+}
+.logContainer .title {
+  display: flex;
+  color: var(--Main-color);
+  text-align: start;
+  padding-bottom: 15px;
+}
+.logContainer .uploader {
+  display: none;
+}

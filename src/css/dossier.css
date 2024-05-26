@@ -1,0 +1,53 @@
+/* Variables */
+:root {
+  --Font1: "Playfair Display", serif;
+  --Font2: "Poppins", sans-serif;
+  --Main-color: #ae4a84;
+  --Grey: #888888;
+}
+/* Variables */
+/* Global Variables */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+body {
+  font-family: var(--Font2);
+}
+input:focus {
+  outline: none;
+}
+.fichier {
+  background-color: lightgrey;
+  display: block;
+  margin-bottom: 20px;
+}
+.fichier img {
+  max-width: 50%;
+}
+.dossierDecision {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+.dossierDecision button {
+  margin: 0px 10px;
+  border: none;
+  background-color: #ae4a84;
+  color: white;
+  font-weight: 500;
+  padding: 15px 0px;
+  width: 125px;
+}
+.dossierDecision .accept {
+  background-color: green;
+}
+.dossierDecision .refuse {
+  background-color: red;
+}

@@ -1,0 +1,193 @@
+/* Variables */
+:root {
+  --Font1: "Playfair Display", serif;
+  --Font2: "Poppins", sans-serif;
+  --Main-color: #ae4a84;
+  --Grey: #888888;
+}
+/* Variables */
+/* Global Variables */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+body {
+  font-family: var(--Font2);
+  min-height: 100vh;
+}
+input:focus {
+  outline: none;
+}
+.signUpContainer {
+  background-color: rgb(240, 240, 240);
+  padding: 30px 0px;
+  min-height: 70vh;
+}
+.teswira {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--Grey);
+}
+.teswira img {
+  width: 80px;
+  height: 80px;
+}
+.signUpContainer .box {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  border: 1px solid var(--Grey);
+  border-radius: 5px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.signUpContainer .box form {
+  margin-bottom: 10px;
+}
+.signUpContainer .box form .olba {
+  display: flex;
+  flex-direction: column;
+}
+.signUpContainer .box form .olba .title {
+  color: var(--Main-color);
+  padding: 15px 0px;
+}
+.signUpContainer .box .signUp {
+  background-color: var(--Main-color);
+  color: white;
+  width: 150px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 25px 0px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  transition: 0.2s;
+  border: none;
+  margin-top: 30px;
+}
+
+.signUpContainer .box .signUp:hover {
+  background-color: #79335c;
+}
+
+.signUpContainer .box .olba .firas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signUpContainer .box .olba .uploader {
+  width: 320px;
+}
+
+.signUpContainer .box .dakhelolba {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+.signUpContainer .box .handleUpload {
+  width: 100px;
+  border: none;
+  color: white;
+  background-color: var(--Main-color);
+  padding: 15px 0px;
+  transition: 0.1s;
+  align-self: center;
+}
+
+.signUpContainer .box .handleUpload:hover {
+  background-color: #79335c;
+}
+
+.signUpContainer .box progress {
+  width: 10px;
+  align-self: center;
+}
+
+.signUpContainer .box .msg {
+  flex: 1;
+  color: red;
+  font-size: 14px;
+  width: 100%;
+  align-self: center;
+  text-align: start;
+  margin-left: 10px;
+  font-weight: 400;
+}
+.signUpContainer .box i {
+  margin-left: 10px;
+  flex: 1;
+  align-self: center;
+}
+
+.signUpContainer .box .msg {
+  margin-left: 10px;
+  text-align: start;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .signUpContainer .box .msg {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .signUpContainer .box form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .signUpContainer .box form .olba {
+    flex-basis: 40%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1399px) {
+  .signUpContainer .box {
+    width: 96%;
+  }
+  .signUpContainer .box form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .signUpContainer .box form .olba {
+    flex-basis: 47.5%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .signUpContainer .box {
+    width: 88%;
+  }
+  .signUpContainer .box .olba .uploader {
+    width: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .signUpContainer .box {
+    padding: 20px 20px;
+    width: 95%;
+  }
+  .signUpContainer .box .olba .uploader {
+    width: 220px;
+  }
+  .signUpContainer .box .handleUpload {
+    width: 70px;
+    padding: 12px 0px;
+    font-size: 14px;
+  }
+}
