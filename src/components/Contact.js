@@ -4,54 +4,38 @@ export function Contact() {
   return (
     <div className="contact">
       <div className="container">
-        <div className="left">
-          <p>Visitez-nous!</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.392960297156!2d2.9185679258354513!3d36.73713777226513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fa564e3279849%3A0xc34a805ee410bf92!2sCentre%20%C3%A9questre%20ouled%20fayet!5e0!3m2!1sen!2sdz!4v1716730138234!5m2!1sen!2sdz"
-            width="600"
-            height="450"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <div className="right">
-          <div className="box">
-            <p className="title">Contact-Nous</p>
-            <ul>
-              <li>
-                <div className="icon">
-                  <i className="fa-solid fa-location-dot"></i>
-                </div>
-                <div>
+        <h3>Visitez-Nous!</h3>
+        <div className="taht">
+          <div className="left">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.392960297156!2d2.9185679258354513!3d36.73713777226513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fa564e3279849%3A0xc34a805ee410bf92!2sCentre%20%C3%A9questre%20ouled%20fayet!5e0!3m2!1sen!2sdz!4v1716730138234!5m2!1sen!2sdz"
+              width="600"
+              height="450"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div className="right">
+            <div className="box">
+              <ul>
+                <li>
+                  <p className="head">Notre Adresse</p>
                   <p>04 rue de bouchaoui, Ouled Fayet, Algeria</p>
-                </div>
-              </li>
-              <li>
-                <div className="icon">
-                  <i className="fa-solid fa-phone"></i>
-                </div>
-                <div>
-                  <p>0550668307</p>
-                </div>
-              </li>
-              <li>
-                <div className="icon">
-                  <i className="fa-solid fa-message"></i>
-                </div>
-                <div>
-                  <p>fayet.equitation@hotmail.fr</p>
-                </div>
-              </li>
-              <li>
-                <div className="icon">
-                  <i className="fa-solid fa-globe"></i>
-                </div>
-                <div>
-                  <p>ceqouledfayet.com</p>
-                </div>
-              </li>
-            </ul>
+                </li>
+                <li>
+                  <p className="head">Heures</p>
+                  <p>Lundi - Vendredi : 9am - 5pm</p>
+                  <p>Samedi : 10am - 4pm</p>
+                  <p>Dimanche : Fermé</p>
+                </li>
+                <li>
+                  <p className="head">Contact</p>
+                  <p>Email : fayet.equitation@hotmail.fr</p>
+                  <p>Telephone : 0550668307</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
