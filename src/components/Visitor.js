@@ -5,8 +5,9 @@ import Header from "./Header";
 import Home from "./Home";
 import Footer from "./Footer";
 import Gallery from "./Gallery";
+import Contact from "./Contact";
+import Offres from "./Offres";
 import { Link } from "react-router-dom";
-import { Contact } from "./Contact";
 
 const headerItems = [
   {
@@ -44,6 +45,13 @@ const headerItems = [
     actv: "",
     src: "./images/box4.jpg",
   },
+  {
+    id: 4,
+    name: "Offres",
+    location: "#",
+    actv: "",
+    src: "./images/box4.jpg",
+  },
 ];
 
 export default function Visitor() {
@@ -75,6 +83,9 @@ export default function Visitor() {
             break;
           case 3:
             document.title = `Gallerie`;
+            break;
+          case 4:
+            document.title = `Offres`;
             break;
           default:
             return;
@@ -142,7 +153,8 @@ function Item({ name, location, actv, item, onSelectedPage, setHead }) {
       }}
       className={actv}
     >
-      <a href={`${location}`}>{`${name}`}</a>
+      {/* <a href={`${location}`}>{`${name}`}</a> */}
+      <Link to={location}>{name}</Link>
     </li>
   );
 }
@@ -217,11 +229,23 @@ function Content({ selectedPage, onSelectedPage }) {
         </Home>
       );
     case 2:
-      return <Contact />;
+      return (
+        <>
+          <Contact />
+          <Footer />
+        </>
+      );
     case 3:
       return (
         <>
           <Gallery />
+          <Footer />
+        </>
+      );
+    case 4:
+      return (
+        <>
+          <Offres />
           <Footer />
         </>
       );

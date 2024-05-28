@@ -86,7 +86,7 @@ function SecLanding() {
           <div className="intrest">
             <div className="icon">
               <div>
-                <i class="fa-solid fa-trophy"></i>
+                <i className="fa-solid fa-trophy"></i>
               </div>
             </div>
             <div className="texts">
@@ -101,7 +101,7 @@ function SecLanding() {
           <div className="intrest">
             <div className="icon">
               <div>
-                <i class="fa-solid fa-tree"></i>
+                <i className="fa-solid fa-tree"></i>
               </div>
             </div>
             <div className="texts">
@@ -116,7 +116,7 @@ function SecLanding() {
           <div className="intrest">
             <div className="icon">
               <div>
-                <i class="fa-solid fa-bowl-food"></i>
+                <i className="fa-solid fa-bowl-food"></i>
               </div>
             </div>
             <div className="texts">

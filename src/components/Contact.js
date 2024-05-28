@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 /* eslint-disable react/jsx-no-comment-textnodes */
-export function Contact() {
+export default function Contact() {
   return (
     <div className="contact">
       <div className="container">
