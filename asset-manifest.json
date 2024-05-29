@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/equitation/static/css/main.005346aa.css",
-    "main.js": "/equitation/static/js/main.d857bd43.js",
+    "main.css": "/equitation/static/css/main.276bea1c.css",
+    "main.js": "/equitation/static/js/main.c15da49d.js",
     "static/js/453.a1a2de86.chunk.js": "/equitation/static/js/453.a1a2de86.chunk.js",
     "static/media/secLanding.jpg": "/equitation/static/media/secLanding.5dfa7113c190e95b6e64.jpg",
     "index.html": "/equitation/index.html",
-    "main.005346aa.css.map": "/equitation/static/css/main.005346aa.css.map",
-    "main.d857bd43.js.map": "/equitation/static/js/main.d857bd43.js.map",
+    "main.276bea1c.css.map": "/equitation/static/css/main.276bea1c.css.map",
+    "main.c15da49d.js.map": "/equitation/static/js/main.c15da49d.js.map",
     "453.a1a2de86.chunk.js.map": "/equitation/static/js/453.a1a2de86.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.005346aa.css",
-    "static/js/main.d857bd43.js"
+    "static/css/main.276bea1c.css",
+    "static/js/main.c15da49d.js"
   ]
 }
