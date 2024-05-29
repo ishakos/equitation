@@ -151,7 +151,7 @@ function Item({ name, location, actv, item, onSelectedPage, setHead }) {
         onSelectedPage(item.id);
         setHead(false);
       }}
-      className={actv}
+      // className={actv}
     >
       {/* <a href={`${location}`}>{`${name}`}</a> */}
       <Link to={location}>{name}</Link>
