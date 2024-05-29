@@ -50,7 +50,7 @@ const headerItems = [
     name: "Offres",
     location: "",
     actv: "",
-    src: "./images/box4.jpg",
+    src: "./images/box1.jpg",
   },
 ];
 
