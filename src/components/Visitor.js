@@ -151,7 +151,7 @@ function Item({ name, location, actv, item, onSelectedPage, setHead }) {
         onSelectedPage(item.id);
         setHead(false);
       }}
-      // className={actv}
+      className={actv}
     >
       {/* <a href={`${location}`}>{`${name}`}</a> */}
       <Link to={location}>{name}</Link>
@@ -177,7 +177,7 @@ function Thumbs({ onSelectedPage }) {
     <div className="thumbnails">
       <div className="container">
         {headerItems?.map((item) =>
-          item.id !== 1 && item.id !== 4 ? (
+          item.id !== 1 && item.id !== 2 ? (
             <Box
               key={item.id}
               item={item}
