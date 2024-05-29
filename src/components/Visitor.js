@@ -13,14 +13,14 @@ const headerItems = [
   {
     id: 1,
     name: "Home",
-    location: "#",
+    location: "",
     actv: "active",
     src: "",
   },
   {
     id: 2,
     name: "Contact",
-    location: "#",
+    location: "",
     actv: "",
     src: "./images/box1.jpg",
   },
@@ -41,14 +41,14 @@ const headerItems = [
   {
     id: 3,
     name: "Gallerie",
-    location: "#",
+    location: "",
     actv: "",
     src: "./images/box4.jpg",
   },
   {
     id: 4,
     name: "Offres",
-    location: "#",
+    location: "",
     actv: "",
     src: "./images/box4.jpg",
   },
@@ -177,7 +177,7 @@ function Thumbs({ onSelectedPage }) {
     <div className="thumbnails">
       <div className="container">
         {headerItems?.map((item) =>
-          item.id !== 1 ? (
+          item.id !== 1 && item.id !== 4 ? (
             <Box
               key={item.id}
               item={item}
@@ -216,7 +216,7 @@ function Box({ src, p, item, onSelectedPage }) {
 }
 
 function Empty() {
-  return <></>;
+  return null;
 }
 
 function Content({ selectedPage, onSelectedPage }) {

@@ -535,7 +535,7 @@ header .computer .specialLiLogin {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .thumbnails .box:last-child {
-  display: none;
+  grid-column-start: 2;
 }
 .thumbnails .box img {
   max-width: 100%;
